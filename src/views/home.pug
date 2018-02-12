@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+	h2 this is a home page
+
+	if user.name
+		p #{user.name},您已经登陆 
+
+	else 
+		p 尚未登陆
+			a(href="/login") 点击登陆哦~
